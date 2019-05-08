@@ -1,0 +1,13 @@
+class abc {
+        				void static getArea(){
+							for x := 5 downto 1 - 10/5 do
+								Sha.getString();
+								io.writeIntLn(x);
+								if(x > 1) then
+									x := x*2;
+							for i := 1 to 100 do {
+								io.writeIntLn(i);
+								Intarray[i] := i + 1;
+							}
+						}
+					}

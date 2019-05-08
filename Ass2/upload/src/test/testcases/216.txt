@@ -1,0 +1,7 @@
+class abc {
+        				void static getArea(length,width:float){
+							this.aPI := 3.14;
+							value := x.foo(5);
+							l[3] := value * 2;
+						}
+					}

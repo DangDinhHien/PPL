@@ -1,0 +1,5 @@
+class abc {
+        				void static getArea(a, b, c: int){
+        					return a;
+						}
+					}

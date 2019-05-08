@@ -1,0 +1,6 @@
+class Shape {
+                    my1stVar: int;
+                    myArrayVar: int[5];
+                    static my2ndVar, my3rdVar: Shape;
+                    static my2ndArray, my3rdArray: Shape[6];
+                }

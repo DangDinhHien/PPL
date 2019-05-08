@@ -1,0 +1,11 @@
+class abc {
+                        void static getArea(length,width:float){
+                            b.getMax(a[5]);
+                            for x := 5 downto 2 do
+                                io.writeIntLn(x);
+                            for i := 1 to 100 do {
+                                io.writeIntLn(i);
+                                Intarray[i] := i + 1;
+                            }
+                        }
+                    }

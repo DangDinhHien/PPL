@@ -1,0 +1,1 @@
+Program(List(ClassDecl(Id(Shape),List(AttributeDecl(Instance,ConstDecl(Id(My1stCons),IntType,BinaryOp(+,IntLiteral(1),IntLiteral(5)))),AttributeDecl(Static,ConstDecl(Id(My2ndCons),IntType,IntLiteral(2)))))))

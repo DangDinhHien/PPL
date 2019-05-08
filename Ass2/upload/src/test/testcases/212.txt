@@ -1,0 +1,5 @@
+class abc {
+        				string getArea(a, b, c: int){
+        					return abae[1+2];
+						}
+					}

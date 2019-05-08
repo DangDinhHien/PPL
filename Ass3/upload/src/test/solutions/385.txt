@@ -1,0 +1,1 @@
+Type Mismatch In Statement: AssignStmt(Id(l),CallExpr(SelfLiteral(),Id(foo),List()))

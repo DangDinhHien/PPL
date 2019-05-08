@@ -1,0 +1,6 @@
+class abc {
+        				int  Dog(a,b : int){
+        					b.getMax(Cat.getName(), Mouse.getName());
+							return 0;
+						}
+					}

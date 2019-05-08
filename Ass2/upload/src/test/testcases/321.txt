@@ -1,0 +1,6 @@
+class abc {
+                        void static getArea(length,width:float){
+                            for x := 5 downto 2 do
+                                io.writeIntLn(x);
+                        }
+                    }

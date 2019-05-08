@@ -1,0 +1,1 @@
+static final int My2ndCons = 2;

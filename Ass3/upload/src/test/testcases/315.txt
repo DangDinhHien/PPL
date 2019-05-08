@@ -1,0 +1,18 @@
+
+            class a extends b {
+                a: int;
+                static b: float;
+                final int c = 1;
+
+                void main(){
+                    this.aaa := 1;
+
+                }
+            }
+
+            class b{
+                aaa : int;
+
+            }
+
+            

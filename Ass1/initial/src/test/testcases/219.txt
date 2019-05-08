@@ -1,0 +1,12 @@
+class abc {
+        				void static getArea(length,width:float){
+							if a <= b + c then
+								value := x.foo(5);
+								l[3] := value * 2;
+								io.write("Suy nua thi");
+								if b < 0 then
+									b := c + 3;
+								else
+									b[1] := a;
+						}
+					}

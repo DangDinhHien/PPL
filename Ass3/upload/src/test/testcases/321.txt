@@ -1,0 +1,23 @@
+
+            class a extends b {
+                a: int;
+                static bb: float;
+                final int c = 1;
+
+                int foo(){
+
+                }
+
+                void main(){
+                    for temp := 1 to 10 do{
+
+                    }
+                }
+            }
+
+            class b{
+                static dem : int;
+
+            }
+
+            

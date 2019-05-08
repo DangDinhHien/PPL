@@ -1,0 +1,1 @@
+Program(List(ClassDecl(Id(Shape),List(AttributeDecl(Static,ConstDecl(Id(numOfShape),IntType,IntLiteral(0))),AttributeDecl(Instance,ConstDecl(Id(immuAttribute),IntType,IntLiteral(0))),AttributeDecl(Instance,VarDecl(Id(length),FloatType)),AttributeDecl(Instance,VarDecl(Id(width),FloatType))))))

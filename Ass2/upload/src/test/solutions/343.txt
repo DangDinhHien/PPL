@@ -1,0 +1,1 @@
+Program(List(ClassDecl(Id(abc),List(MethodDecl(Id(Mouse),Instance,List(VarDecl(Id(a),IntType),VarDecl(Id(b),IntType)),IntType,Block(List(),List(CallStmt(Id(b),Id(getMax),[ArrayCell(Id(a),Id(i)),ArrayCell(Id(b),Id(j)),ArrayCell(Id(c),Id(z))]),Return(IntLiteral(0)))))))))

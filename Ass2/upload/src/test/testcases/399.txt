@@ -1,0 +1,7 @@
+class Shape {
+                        float getArea(){
+                            name := Ex1.A("e", -2).R("F");
+                            a.print("Fail");
+                            return -100;
+                        }
+                    }

@@ -1,0 +1,1 @@
+Program(List(ClassDecl(Id(Rectangle),Id(Shape),List(AttributeDecl(Static,ConstDecl(Id(numOfShape),IntType,IntLiteral(0)))))))

@@ -1,0 +1,1 @@
+Program(List(ClassDecl(Id(Rectangle),Id(Shape),List(MethodDecl(Id(getArea),Instance,List(),FloatType,Block(List(),List(Return(BinaryOp(*,FieldAccess(SelfLiteral(),Id(length)),FieldAccess(SelfLiteral(),Id(width)))))))))))

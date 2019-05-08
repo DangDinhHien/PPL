@@ -1,0 +1,6 @@
+class Shape {
+                        float getArea(){
+                            a := L.A("Neu em con ton tai").name;
+                            return -100;
+                        }
+                    }

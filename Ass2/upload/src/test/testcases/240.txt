@@ -1,0 +1,7 @@
+class abc {
+        				int  Mouse(a,b : int){
+        					b.getMax(-z, 10);
+        					a := -temp;
+							return 0;
+						}
+					}

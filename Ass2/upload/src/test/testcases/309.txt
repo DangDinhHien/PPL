@@ -1,0 +1,5 @@
+class Shape {
+                        void static getArea(a, b, c: int){
+                            return this.length*this.width;
+                        }
+                    }

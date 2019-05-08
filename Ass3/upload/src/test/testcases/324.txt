@@ -1,0 +1,25 @@
+
+            class a extends b {
+                a: int;
+                static bb: float;
+                final int c = 1;
+
+                int foo(){
+                    static final string foc = "S";
+
+                }
+
+                void main(){
+                    final float b = 1.1;
+                    {
+                        b := 1;
+                    }
+                }
+            }
+
+            class b{
+                static final int dem = 1;
+
+            }
+
+            

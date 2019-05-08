@@ -1,0 +1,17 @@
+
+            class a extends b {
+                a: int;
+                static b: float;
+                final int c = 1;
+
+                void main(){
+                    aa := 1;
+
+                }
+            }
+
+            class b{
+
+            }
+
+            

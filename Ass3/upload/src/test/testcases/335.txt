@@ -1,0 +1,19 @@
+
+            class a extends b {
+                a: int;
+                static bb: float;
+                final int c = 1;
+
+                void main(i:int;j:float;k:string){
+                    i := 1.1;
+                }
+            }
+
+            class b {
+                static len: int;
+
+                static final string n = "t";
+
+            }
+
+            

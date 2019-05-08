@@ -1,0 +1,16 @@
+class Shape {
+        				void static getArea(a, b, c: int){
+        					for i := a + b to c * c do{
+        						if(i == 10) then continue;
+
+        						a := a + 10;
+        					}
+        					return a;
+						}
+					}
+					class abc {
+        				my1stVar: int;
+						myArrayVar: int[5];
+						static my2ndVar, my3rdVar: Shape;
+						static my2ndArray, my3rdArray: Shape[6];
+					}

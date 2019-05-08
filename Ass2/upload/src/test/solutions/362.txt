@@ -1,0 +1,1 @@
+Program(List(ClassDecl(Id(abc),List(MethodDecl(Id(getArea),Static,List(VarDecl(Id(length),FloatType),VarDecl(Id(width),FloatType)),VoidType,Block(List(),List(Block(List(),List(AssignStmt(FieldAccess(SelfLiteral(),Id(length)),Id(length)),AssignStmt(FieldAccess(SelfLiteral(),Id(length)),UnaryOp(!,Id(length))))))))))))

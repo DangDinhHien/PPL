@@ -1,0 +1,1 @@
+Program(List(ClassDecl(Id(abc),List(MethodDecl(Id(getArea),Static,List(VarDecl(Id(length),FloatType),VarDecl(Id(width),FloatType)),VoidType,Block(List(),List(If(BinaryOp(>,Id(a),IntLiteral(1)),CallStmt(Id(io),Id(write),[StringLiteral("Suy nua thi")]),CallStmt(Id(io),Id(write),[StringLiteral("Anh sai roi")])))))))))

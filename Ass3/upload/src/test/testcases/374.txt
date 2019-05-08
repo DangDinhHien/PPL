@@ -1,0 +1,24 @@
+
+            class a extends b {
+                a: int;
+                static bb: float;
+                final int c = 1;
+
+                float main(i:int;j:float;k:string;l:boolean){
+                    i := -10;
+
+                    l := !l;
+                    l := !i;
+
+                    return 1;
+                }
+            }
+
+            class b {
+                static len: float;
+
+                static final string n = "t";
+
+            }
+
+            

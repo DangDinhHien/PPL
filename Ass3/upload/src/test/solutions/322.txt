@@ -1,0 +1,1 @@
+Cannot Assign To Constant: AssignStmt(FieldAccess(SelfLiteral(),Id(dem)),IntLiteral(10))

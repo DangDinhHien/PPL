@@ -1,0 +1,8 @@
+class abc {
+        				void static getArea(length,width:float){
+        					{
+        						this.length := length;
+        						this.length := length;
+        					}
+						}
+					}

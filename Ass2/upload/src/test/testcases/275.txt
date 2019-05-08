@@ -1,0 +1,10 @@
+class abc {
+        				void static getArea(length,width:float){
+							if a == 1 then
+								io.write("Suy nua thi");
+								if b < 0 then
+									b := c.get("Mouse") + 3 - c.get("Cat");
+								else
+									b[1] := a;
+						}
+					}

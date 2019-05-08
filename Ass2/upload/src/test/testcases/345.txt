@@ -1,0 +1,12 @@
+class Example1 {
+                    int factorial(n:int){
+                        if n == 0 then return 1; 
+                        else return n * this.factorial(n - 1);
+                    }
+                    void main(){
+                        x:int;
+                        x := io.read("Nhap vao");
+                        x := io.readInt();
+                        io.writeIntLn(this.factorial(x));
+                    }
+                }

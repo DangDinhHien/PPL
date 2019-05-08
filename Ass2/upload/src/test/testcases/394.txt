@@ -1,0 +1,6 @@
+class Shape {
+                        float getArea(){
+                            this.getName := this.B;
+                            return 0;
+                        }
+                    }

@@ -1,0 +1,1 @@
+Type Mismatch In Constant Declaration: AttributeDecl(Instance,ConstDecl(Id(c),IntType,BinaryOp(+,IntLiteral(1),Id(c))))

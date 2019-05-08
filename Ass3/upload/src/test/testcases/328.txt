@@ -1,0 +1,14 @@
+
+            class a {
+                a: int;
+                static bb: float;
+                final int c = 1;
+
+                void main(i:float;j:float;k:string){
+                    for i := 1 to 10 do {
+                    
+                    }
+                }
+            }
+
+            

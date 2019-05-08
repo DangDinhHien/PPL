@@ -1,0 +1,1 @@
+Program(List(ClassDecl(Id(Shape),List(MethodDecl(Id(getArea),Instance,List(),FloatType,Block(List(),List(AssignStmt(Id(b),CallExpr(CallExpr(Id(Ex1),Id(A),List()),Id(B),List(StringLiteral("theoso"),Id(t)))),Return(UnaryOp(-,IntLiteral(100))))))))))

@@ -1,0 +1,8 @@
+
+            class a {
+                a: int;
+                static b: float;
+                final int b = 1;
+            }
+
+            

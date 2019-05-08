@@ -1,0 +1,23 @@
+
+            class a extends b {
+                a: int;
+                static bb: float;
+                final int c = 1;
+
+                int foo(){
+
+                }
+
+                void main(){
+                    if (temp > 1) then {
+
+                    }
+                }
+            }
+
+            class b{
+                static dem : int;
+
+            }
+
+            

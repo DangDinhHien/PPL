@@ -1,0 +1,1 @@
+Program(List(ClassDecl(Id(abc),List(MethodDecl(Id(getArea),Instance,List(VarDecl(Id(a),IntType),VarDecl(Id(b),IntType),VarDecl(Id(c),IntType)),StringType,Block(List(),List(Return(ArrayCell(Id(abae),BinaryOp(+,IntLiteral(1),IntLiteral(2)))))))))))

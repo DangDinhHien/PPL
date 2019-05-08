@@ -1,0 +1,6 @@
+class Shape {
+                        float getArea(){
+                            e := Ex1.A(1, e-3).name;
+                            return -100;
+                        }
+                    }

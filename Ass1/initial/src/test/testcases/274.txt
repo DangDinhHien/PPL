@@ -1,0 +1,16 @@
+class abc {
+        				string static getArea(length,width:float){
+							if a == 1 then
+								io.write("Suy nua thi");
+								if b < 0 then
+								{	b := c + 3;
+									this.aPI := 3.14;
+									value := x.foo(5, "ertys");
+									l[3] := value * 2;
+								}
+								else
+									b[1] := a;
+
+							return "MMMMMM";
+						}
+					}

@@ -1,0 +1,18 @@
+
+            class a extends b {
+                a: int;
+                static bb: float;
+                final int c = 1;
+
+                float main(i:int;j:float;k:string;l:boolean){
+                    t : b;
+
+                    return 1;
+                }
+            }
+
+            class b extends c{
+
+            }
+
+            

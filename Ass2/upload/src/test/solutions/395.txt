@@ -1,0 +1,1 @@
+Program(List(ClassDecl(Id(Shape),List(MethodDecl(Id(getArea),Instance,List(),FloatType,Block(List(),List(AssignStmt(Id(a),FieldAccess(CallExpr(Id(L),Id(A),List(StringLiteral("Neu em con ton tai"))),Id(name))),Return(UnaryOp(-,IntLiteral(100))))))))))

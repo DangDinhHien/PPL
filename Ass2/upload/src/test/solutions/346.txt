@@ -1,0 +1,1 @@
+Program(List(ClassDecl(Id(Example1),List(MethodDecl(Id(factorial),Instance,List(VarDecl(Id(n),IntType)),IntType,Block(List(),List(If(BinaryOp(==,Id(n),IntLiteral(0)),Return(IntLiteral(1)),Return(BinaryOp(*,Id(n),CallExpr(SelfLiteral(),Id(factorial),List(BinaryOp(-,Id(n),IntLiteral(1))))))),Break)))))))

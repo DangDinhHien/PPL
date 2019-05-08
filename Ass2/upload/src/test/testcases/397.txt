@@ -1,0 +1,6 @@
+class Shape {
+                        float getArea(){
+                            r := Ex1.A(r+5,"chuoi").B();
+                            return -100;
+                        }
+                    }

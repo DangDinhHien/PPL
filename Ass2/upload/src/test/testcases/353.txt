@@ -1,0 +1,12 @@
+class abc {
+                        int static getArea(length,width:float){
+                            for x := 5 + b * 2 % 10 downto 2 do
+                                io.writeIntLn(x);
+                            for i := 1 to 100 do {
+                                io.writeIntLn(i);
+                                Intarray[i] := i + 1;
+                            }
+
+                            return this.a;
+                        }
+                    }

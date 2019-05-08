@@ -1,0 +1,5 @@
+class abc {
+        				void getArea(a, b, c: string){
+        					return b[[4]];
+						}
+					}

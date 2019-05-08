@@ -1,0 +1,14 @@
+class abc {
+                        void getArea(a, b, c, d:string){
+                            {
+                                this.length := length;
+                                this.length := ! length;
+                                a := a + [a + b % 10];
+                                if(a == b) then
+                                    io.write("ABC");
+                                    break;
+                                return a;
+                                
+                            }
+                        }
+                    }

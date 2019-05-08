@@ -1,0 +1,41 @@
+
+
+
+
+                class Shape extends b{
+                    static len, with: int;
+                    static final int temp = 1 + len;
+
+                    bo : bool;
+
+                    a, m: float;
+
+                    Shape (a, b: int; c: float; d: string){
+                        m: int;
+
+                    }
+                    float num(){
+                        m := 1+len;
+                        {
+                            m : string;
+                            Shape : float;
+
+                        }
+
+                    }
+                }
+
+
+                class b{
+                    static ttttt: float;
+                    int e(){
+                    
+                    }
+
+                    float r(){
+
+                    }
+                }
+
+
+                

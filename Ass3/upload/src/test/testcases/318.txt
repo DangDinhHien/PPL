@@ -1,0 +1,24 @@
+
+            class a extends b {
+                a: int;
+                static bb: float;
+                final int c = 1;
+
+                int foo(){
+
+                }
+
+                void main(){
+                    a := b.dem;
+
+                    a := cc.foo();
+
+                }
+            }
+
+            class b{
+                static dem : int;
+
+            }
+
+            

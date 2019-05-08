@@ -1,0 +1,15 @@
+
+            class a {
+                a: int;
+                static b: float;
+                final int c = 1;
+
+                void mainc(){
+                    static e: float;
+                    final string f = "Str";
+                    mainc: float;
+                    e : int;
+                }
+            }
+
+            

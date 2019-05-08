@@ -1,0 +1,6 @@
+class Shape {
+        				float getArea(){
+        					a := 3 - this.N;
+        					return a % 10;
+						}
+					}

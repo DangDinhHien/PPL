@@ -1,0 +1,11 @@
+class abc {
+                        void static getArea(length,width:float){
+                                %%start of declaration part
+                                r,s:float;
+                                a,b:int[5];
+                                %%list of statements
+                                r := r ;
+                                s:=r*r*this.myPI;
+                                a[0]:= 2.0;
+                        }
+                    }

@@ -1,0 +1,8 @@
+class Shape {
+                    length,width:float;
+                    float getArea() {}
+                    Shape(length,width:float){
+                        this.length := length;
+                        this.width := width;
+                    }
+                }

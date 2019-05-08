@@ -1,0 +1,6 @@
+class Rau {
+        				int  Mouse(a,b : int){
+        					b.getMax(c.giet(), 10);
+							return 0;
+						}
+					}

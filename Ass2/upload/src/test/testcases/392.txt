@@ -1,0 +1,7 @@
+class Shape {
+                        float getArea(abc, c: int){
+                            if(c == 1 && (abc < 1)) then return 0;
+                            tong := tong*abc + 1;
+                            return this.getArea(abc/2, c-1);
+                        }
+                    }

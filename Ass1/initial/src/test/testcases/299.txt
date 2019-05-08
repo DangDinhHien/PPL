@@ -1,0 +1,6 @@
+class Shape {
+        				float getArea(){
+        					this.Temp := 10;
+        					return this.Temp;
+						}
+					}

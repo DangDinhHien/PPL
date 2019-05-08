@@ -1,0 +1,4 @@
+class Shape {
+                    final int My1stCons = 1 + 5;
+                    static final int My2ndCons = 2;
+                }

@@ -1,0 +1,1 @@
+Program(List(ClassDecl(Id(Shape),List(MethodDecl(Id(getArea),Instance,List(),FloatType,Block(List(),List(AssignStmt(Id(e),FieldAccess(CallExpr(Id(Ex1),Id(A),List(IntLiteral(1),BinaryOp(-,Id(e),IntLiteral(3)))),Id(name))),Return(UnaryOp(-,IntLiteral(100))))))))))

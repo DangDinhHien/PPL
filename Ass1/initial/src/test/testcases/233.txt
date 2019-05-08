@@ -1,0 +1,6 @@
+class abc {
+        				int  Mouse(a,b : int){
+        					b.getMax("nobody","anhmuonemsongsao");
+							return 0;
+						}
+					}

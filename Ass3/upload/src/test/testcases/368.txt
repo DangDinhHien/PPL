@@ -1,0 +1,23 @@
+
+            class a extends b {
+                a: int;
+                static bb: float;
+                final int c = 1;
+
+                float main(i:int;j:float;k:string;l:boolean){
+                    i := this.a % 4;
+                    j := this.a % 2;
+                    k := "111" ^ "222";
+                    k := "111" ^ 1.4;
+                    return 1;
+                }
+            }
+
+            class b {
+                static len: float;
+
+                static final string n = "t";
+
+            }
+
+            

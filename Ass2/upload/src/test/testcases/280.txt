@@ -1,0 +1,9 @@
+class Example2 {
+					void main(){
+						s:Shape;
+						s := new Rectangle(b, e, f);
+						io.writeFloatLn(s.getArea());
+						s := new Triangle();
+						io.writeFloatLn(s.getArea());
+					}
+				}

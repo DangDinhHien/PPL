@@ -1,0 +1,6 @@
+class abc {
+        				int  Cat(a,b : int){
+        					b.getMax(Cat.e(), "anh");
+							return 0;
+						}
+					}

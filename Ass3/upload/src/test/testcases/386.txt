@@ -1,0 +1,24 @@
+
+            class a extends b {
+                a: int;
+                static bb: float;
+                final int c = 1;
+
+                float main(i:int;j:float;k:string;l:boolean){
+                    this.foo();
+                    return 1;
+                }
+            }
+
+            class b extends c{
+
+            }
+
+            class c{
+                int foo(){
+                    return 1;
+                }
+            }
+
+
+            

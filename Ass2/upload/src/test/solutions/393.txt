@@ -1,0 +1,1 @@
+Program(List(ClassDecl(Id(Shape),List(MethodDecl(Id(getArea),Instance,List(),FloatType,Block(List(),List(AssignStmt(FieldAccess(SelfLiteral(),Id(Temp)),IntLiteral(10)),Return(FieldAccess(SelfLiteral(),Id(Temp))))))))))

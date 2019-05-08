@@ -1,0 +1,8 @@
+class abc {
+                        void static getArea(length,width:float){
+                            if a > 1 then
+                                io.write("Suy nua thi");
+                            else
+                                io.write("Anh sai roi");
+                        }
+                    }

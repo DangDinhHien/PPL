@@ -1,0 +1,6 @@
+class abc {
+        				int  Mouse(a,b : int){
+        					b.getMax(a[i], b[j], c[z]);
+							return 0;
+						}
+					}
