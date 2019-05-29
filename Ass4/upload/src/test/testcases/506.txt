@@ -1,0 +1,19 @@
+
+            class a{
+                static d: float;
+                bb: float;
+                void static main(){
+                    d, f: int;
+                    e: boolean;
+                    %%d := 4;
+                    if true then 
+                        d := 5;
+
+                    f := d;
+
+                    %%io.writeInt(d);
+                    
+                    
+                }
+            }
+        

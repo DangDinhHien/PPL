@@ -1,0 +1,13 @@
+
+            class abc extends io{
+                a, b:int;
+                final float c = 1;
+
+                void shape(a, b:int; e:float){
+                    t: string;
+                    f: float;
+                    final int aa = 1;
+                    io.writeBool(false);
+                }
+            }
+        

@@ -1,0 +1,7 @@
+
+            class a{
+                void static main(){
+                    io.writeStr("cc");
+                }
+            }
+        
