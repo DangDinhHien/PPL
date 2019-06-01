@@ -1,0 +1,17 @@
+
+            class a {
+                static d: float;
+                bb: float;
+                void static foo(){
+                    io.writeFloat(7.67);
+                }
+
+                void static main(){
+                    a: int;
+                    e: boolean;
+                    e := false;
+                    this.foo();
+                }
+            }
+
+        

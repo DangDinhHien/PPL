@@ -1,0 +1,10 @@
+
+       procedure main();
+       var x : integer; z : array[0 .. 3] of integer;
+       begin
+        z[1] := 12;
+        x := -z[1] + 100;
+        putInt(x);
+        end
+
+        

@@ -1,0 +1,19 @@
+
+            class a {
+                void static foo2(){
+                    io.writeInt(1);
+                }
+                void static main(){
+                    io.writeInt(10);
+                    b.foo2();
+                }
+            }
+
+            class b {
+                void static foo2(){
+                    io.writeInt(1);
+                }
+
+            }
+
+        

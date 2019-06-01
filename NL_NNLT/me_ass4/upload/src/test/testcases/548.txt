@@ -1,0 +1,20 @@
+
+            procedure main();
+            var x: array[1 .. 2] of real;
+                a: integer;
+            begin
+                x[2] := 8.45;
+                a := 9;
+                x[1] := foo(a);
+                putFloatLn(x[1] + x[2]);
+                putBoolLn(True);
+                putIntLn(1);
+                putStringLn("ahihi");
+            end
+            function foo(a: real): real;
+            var b: integer;
+            begin
+                b := 10;
+                return a + b;
+            end
+            

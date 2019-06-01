@@ -1,0 +1,15 @@
+
+        Procedure main();
+        var n: integer;
+            m,tong,i: integer;
+        BEGIN
+            
+            write("Nhap n:"); readln(n);
+            write("Nhap m: "); readln(m);
+            for i:=1 to m do
+            begin
+                tong:=tong+(n mod 10);
+                n:=n div 10;
+            end
+            
+        END

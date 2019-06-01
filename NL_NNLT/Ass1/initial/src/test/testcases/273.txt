@@ -1,0 +1,9 @@
+
+        function sub_2_int(a,b:integer):integer;
+        begin
+            return a---b;
+        end
+        Procedure main();
+        begin
+            putIntLn(sum_2_int(1,2));
+        end

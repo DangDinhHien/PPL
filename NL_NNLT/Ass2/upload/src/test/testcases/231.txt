@@ -1,0 +1,7 @@
+ 
+        Procedure main();
+        begin
+            n:= 5>=a;
+            m:= 6<=5;
+            q:= 5<>2;
+        end

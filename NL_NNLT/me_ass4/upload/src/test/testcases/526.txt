@@ -1,0 +1,18 @@
+
+       procedure main();
+       var x: array[0 .. 2] of integer;
+       begin
+        x[0] := 100;
+        x[1] := 50;
+
+        putIntLn(x[0]);
+        putStringLn("x");
+        putInt(foo(x) + 50);
+       end
+
+       function foo(a: array[0 .. 2] of integer): integer;
+       var temp: integer;
+       begin
+            putIntLn(a[0]);
+            return a[0];
+        end        

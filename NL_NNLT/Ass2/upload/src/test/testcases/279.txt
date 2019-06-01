@@ -1,0 +1,9 @@
+
+        function factorial(n:integer):integer;
+        var i:integer;
+            prod:integer;
+        begin
+            prod:=1;
+            for i:=1 to n do prod:=prod*i;
+            factorial:=prod;
+        end

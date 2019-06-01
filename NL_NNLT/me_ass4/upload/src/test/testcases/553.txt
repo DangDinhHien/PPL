@@ -1,0 +1,16 @@
+
+            procedure main();
+            var a: integer;
+                b: real;
+            begin
+                a := 5;
+                putFloat(foo(a)[5]);
+            end
+            function foo(a: integer): array [1 .. 10] of real;
+            var result: array [1 .. 10] of real;
+            begin
+                result[5] := 10.5;
+                putFloat(a+result[5]);
+                return result;
+            end
+        

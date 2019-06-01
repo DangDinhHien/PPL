@@ -1,0 +1,22 @@
+
+        procedure main();
+        VAR thang,i, tn, tn_1, tn_2:INTEGER;
+        BEGIN            
+            write("Nhap so thang: ");
+            readln(thang);
+            IF thang>2 THEN
+            BEGIN
+                tn_2:=1; {Thang dau tien co 1 cap tho}
+                tn_1:=1; {Thang thu 2 van co 1 cap tho}
+                FOR i:=3 TO thang DO
+                BEGIN
+                    tn:=tn_1 + tn_2;
+                    tn_2:=tn_1;
+                    tn_1:=tn;
+                END
+            END
+            ELSE
+                tn:=1;
+            writeln("So con tho sau ",thang," thang la: ",2*tn);
+        END
+        

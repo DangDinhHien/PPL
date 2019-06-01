@@ -1,0 +1,19 @@
+
+        VAR n:INTEGER;
+        FUNCTION kiemtra(x:INTEGER):BOOLEAN;
+        VAR tam,i:INTEGER;
+        BEGIN
+            tam:=0; kiemtra:=FALSE;
+            FOR i:= 1 TO (x DIV 2) DO
+            IF x MOD i = 0 THEN tam:=tam+i;
+            IF tam = x THEN kiemtra:=TRUE;
+        END
+        procedure main();
+        BEGIN
+            writeln("Nhap so can kiem tra ");
+            readln(n);
+            IF kiemtra(n) THEN writeln("So ",n," la so hoan thien");
+            ELSE
+            writeln("So ",n," khong phai la so hoan thien");
+        END
+        

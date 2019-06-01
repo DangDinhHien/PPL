@@ -1,0 +1,12 @@
+
+        function m():integer;
+        begin
+            return 5;
+        end
+        procedure main();
+        var i:integer;
+        begin
+            for i:=0 to m() do
+                putInt(i);
+        end
+        

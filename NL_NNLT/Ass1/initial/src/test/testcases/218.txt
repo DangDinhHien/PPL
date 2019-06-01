@@ -1,0 +1,5 @@
+ 
+        Procedure main();
+        begin
+            a:=b:=c:= abc()+dfc();
+        end

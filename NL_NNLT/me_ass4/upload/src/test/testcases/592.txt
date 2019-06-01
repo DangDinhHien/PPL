@@ -1,0 +1,9 @@
+
+        var a:string;
+        procedure main();
+        var c:string;
+        begin
+            a:= "UNNNDJ";
+            putString(a);
+        end
+        

@@ -1,0 +1,19 @@
+
+        procedure main();
+        var iterations:integer;
+            phi1,phi2:real;
+        begin
+            phi1:=1;
+            iterations:=0;
+            
+            while(abs(phi1-phi2)<epsilon) do
+            begin
+                phi2:=phi1;
+                phi1:=sqrt(1+phi1);
+                iterations:=iterations+1;
+            end
+            putIntLn("aaa : ",phi1);
+            putIntLn("aaa : ",iterations);
+            //writeln("Found: ",phi1);
+            //writeln("dkdkdkdkL ",iterations);
+        end

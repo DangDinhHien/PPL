@@ -1,0 +1,15 @@
+
+     var c:array [1 .. 3] of real;
+        a:boolean;
+        
+        procedure main();
+        var b:boolean;
+        d:boolean;
+        i:integer;
+        a: array [-1 .. 5] of integer;
+        begin
+        a[-1]:=6;
+        putInt(a[-1]);
+        end
+
+        

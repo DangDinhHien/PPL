@@ -1,0 +1,4 @@
+ Procedure main();
+                    begin 
+                        func(3,a+1,m(2));
+                    end

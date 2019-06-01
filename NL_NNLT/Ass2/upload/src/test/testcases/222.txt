@@ -1,0 +1,9 @@
+ 
+        Procedure main();
+        begin
+            if a>b then
+                if a>5 then
+                    a:=b;
+            else
+                b:=a;
+        end

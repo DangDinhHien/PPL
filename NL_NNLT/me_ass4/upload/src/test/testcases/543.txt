@@ -1,0 +1,17 @@
+
+        var x: integer;
+
+        var z : array[1 .. 23] of integer;
+
+        procedure main();
+        begin
+            putInt(foo()[10]);
+        end
+
+        function foo(): array[1 .. 23] of integer;
+        var x : array[1 .. 23] of integer;
+        begin
+            x[10] := 100;
+            return x;
+        end
+        

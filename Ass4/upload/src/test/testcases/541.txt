@@ -1,0 +1,15 @@
+
+            class a {
+                void static main(){
+                    final string dem = "str";
+                    io.writeStr(dem);
+                }
+            }
+
+            class b {
+                string static foo2(){
+                    return "str";
+                }
+            }
+
+        

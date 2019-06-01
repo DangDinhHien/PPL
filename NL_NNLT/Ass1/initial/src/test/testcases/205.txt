@@ -1,0 +1,6 @@
+
+        var x:integer;
+            y,x,z:Integer;
+        Procedure main();
+        begin
+        end

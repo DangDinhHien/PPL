@@ -1,0 +1,14 @@
+
+        procedure main();
+        var n: string;
+            m,i,a,tong: integer;
+        BEGIN
+           write("Nhap so n: "); readln(n);
+           write("Nhap m: "); readln(m);
+           for i:= length(n) downto length(n)-m+1 do
+             begin
+                 val(n[i],a);
+                 tong:=tong+a;
+             end
+           write(tong);
+        END

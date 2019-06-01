@@ -1,0 +1,27 @@
+
+        procedure main();
+        Var a,b,c : integer;
+        Begin
+            Write("Nhap vao 3 so : ");Readln(a,b,c);
+            If a>b then
+            Begin
+                a := a + b;
+                b := a - b;
+                a := a - b;
+            End
+            If b>c then
+            Begin
+                b := b + c;
+                c := b - c;
+                b := b - c;
+            End
+            If a>b then
+            Begin
+                a := a + b;
+                b := a - b;
+                a := a - b;
+            End
+            Writeln("Min = ",a);
+            Writeln("Max = ",c);
+        End
+        

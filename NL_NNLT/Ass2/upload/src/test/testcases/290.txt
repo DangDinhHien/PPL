@@ -1,0 +1,17 @@
+
+        procedure main();
+        var a,b:integer;
+             bo:boolean;
+        begin
+            write("Nhap nam :");readln(b);
+            if (b mod 100=0) then bo:=(b mod 400)=0 ;else
+                                  bo:=(b mod 4   )=0;
+            if bo then
+                begin
+                 while (a>0) and (a<13) do
+                    write("Nhap thang :");readln(a);
+                end
+            if (not bo) then
+                begin
+                end
+        end

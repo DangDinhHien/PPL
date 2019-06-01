@@ -1,0 +1,15 @@
+
+        var a:string;
+        var e:integer;
+        procedure main();
+        var c:string;
+        begin
+            e:=0;
+            while e < 5 do
+            begin
+                e:=e+1;
+                if(e mod 2 =0) then continue;
+                else putInt(e);
+            end
+        end
+        

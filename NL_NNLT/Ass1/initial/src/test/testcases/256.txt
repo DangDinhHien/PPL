@@ -1,0 +1,13 @@
+
+        var x:integer;
+        var y:real;
+        function increase(x:integer):integer;
+        begin
+            return x+1;
+        end
+        Procedure main();
+        var a,b:integer;
+        begin
+            putIntLn(increase(x));
+            putIntLn(increase(y));
+        end

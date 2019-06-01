@@ -6,21 +6,24 @@
 
 .method public static main([Ljava/lang/String;)V
 .var 0 is args [Ljava/lang/String; from Label0 to Label1
-.var 1 is d I from Label0 to Label1
-.var 2 is f I from Label0 to Label1
-.var 3 is e Z from Label0 to Label1
+.var 1 is d F from Label0 to Label1
 Label0:
-	iconst_1
-	ifle Label2
 	iconst_5
-	istore_1
-Label2:
-	iload_1
-	istore_2
+	i2f
+	ldc 3.0
+	fadd
+	fstore_1
+	fload_1
+	iconst_1
+	i2f
+	fadd
+	fstore_1
+	fload_1
+	invokestatic io/writeFloat(F)V
 Label1:
 	return
 .limit stack 2
-.limit locals 4
+.limit locals 2
 .end method
 
 .method public <init>()V

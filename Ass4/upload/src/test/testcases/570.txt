@@ -1,0 +1,13 @@
+
+            class a{
+                static d: float;
+                bb: float;
+                void static main(){
+                    d: float;
+                    e: float;
+                    d := 4.5;
+                    e := 19 \ 10;
+                    io.writeFloat(e);
+                }
+            }
+        

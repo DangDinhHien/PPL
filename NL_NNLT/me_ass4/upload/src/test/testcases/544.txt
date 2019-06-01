@@ -1,0 +1,15 @@
+
+        procedure main();
+        var x : integer;
+        begin
+            x := foo()[5];
+            putInt(x);
+        end
+
+        function foo(): array[1 .. 23] of integer;
+        var a: array[1 .. 23] of integer;
+        begin
+            a[5] := 12;
+            return a;
+        end
+        

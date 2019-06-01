@@ -1,0 +1,16 @@
+
+            class a {
+                void static main(){
+                    dem :string;
+                    dem := b.foo2();
+                    io.writeStr(b.foo2());
+                }
+            }
+
+            class b {
+                string static foo2(){
+                    return "strAB";
+                }
+            }
+
+        

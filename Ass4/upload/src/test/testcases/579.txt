@@ -1,0 +1,16 @@
+
+            class a {
+                void static main(){
+                    dem :int;
+                    dem := b.foo2();
+                    io.writeBool(b.foo2());
+                }
+            }
+
+            class b {
+                boolean static foo2(){
+                    return 1 > 1;
+                }
+            }
+
+        

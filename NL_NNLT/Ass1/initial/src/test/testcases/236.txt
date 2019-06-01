@@ -1,0 +1,10 @@
+ 
+        Procedure main();
+        begin
+            a:=a+5;
+            b:=a-5;
+            c:=5/2;
+            d:=6*5;
+            e:=g mod 5;
+            g:=h div 5;
+        end

@@ -1,0 +1,22 @@
+
+        procedure main();
+        var s:string;
+            x,y,z,t:string;
+        begin
+          write("Nhap vao mot xau: ");
+          readln(s);
+          z:=length(s);
+          for y:=length(s) downto 1 do
+          begin
+            if ((s[y]=" ")or(y=1)) then 
+            begin 
+                for t:=y to z do 
+                    begin
+                    write(s[t]);
+                    z:=y;
+                    end 
+            end
+            write(" ");
+          end
+        end
+        

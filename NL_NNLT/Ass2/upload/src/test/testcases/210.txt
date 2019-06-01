@@ -1,0 +1,8 @@
+ 
+        function abc():array [1 .. 3] of real;
+        var a:integer;
+        begin
+        end
+        Procedure main();
+        begin
+        end

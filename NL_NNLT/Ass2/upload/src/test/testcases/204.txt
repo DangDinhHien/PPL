@@ -1,0 +1,6 @@
+
+        var x:integer;
+        Procedure main();
+        begin
+           
+        end

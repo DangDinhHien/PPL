@@ -1,0 +1,15 @@
+
+        function tong(n:integer):integer;
+        var tong_:integer;
+        begin
+            tong_:=0;
+            for i:=1 to n do
+            begin
+                tong_ := tong_+i;
+            end
+            return tong_;
+        end
+        Procedure main();
+        begin
+            putIntLn(tong(5));
+        end

@@ -1,0 +1,19 @@
+
+        procedure main();
+        VAR i,n :INTEGER;
+        BEGIN
+            Write ("Nhap n:");
+            Readln(n);
+            Write (n,"=");
+            i:=2;
+            While n<>1 do 
+            Begin
+                WHILE n MOD i <> 0 DO
+                    i:=i+1;
+                Write(i);
+                n:=n DIV i;
+                IF n > 1 THEN
+                    write ("*");
+            end
+        END
+        

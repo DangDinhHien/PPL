@@ -1,0 +1,15 @@
+
+        procedure main();
+        var x : array[1 .. 20] of real;
+        begin
+            x[5] := 100;
+            foo(x);
+            putFloat(x[5]);
+        end
+
+        procedure foo(a : array[1 .. 20] of real);
+        begin 
+            a[5] := 200;
+            putFloat(a[5]);
+        end
+        

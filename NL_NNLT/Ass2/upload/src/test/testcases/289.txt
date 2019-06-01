@@ -1,0 +1,16 @@
+
+        procedure main();
+        var n, i, j, count: integer;
+        begin
+            write("Nhap N (N>=1): "); readln(n);
+            for i:=1 to n do
+            begin
+                j:=i;
+                while j mod 5 = 0 do
+                begin
+                    j:=j div 5;
+                    count:=count+1;
+                end
+            end
+            write(" So chu so 0 cuoi cua ",n,"! la: ",count);
+        end

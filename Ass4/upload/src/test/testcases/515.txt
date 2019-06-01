@@ -1,0 +1,12 @@
+
+            class a{
+                static d: float;
+                bb: float;
+                void static main(){
+                    d: float;
+                    e: float;
+                    d := - 4.5;
+                    io.writeFloat(d);
+                }
+            }
+        

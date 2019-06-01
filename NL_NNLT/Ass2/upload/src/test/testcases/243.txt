@@ -1,0 +1,8 @@
+ 
+        Procedure main();
+        begin
+            n:=1;
+            S:=0;
+            while (n<10) and (s<20) do
+                n:=n+1;
+        end

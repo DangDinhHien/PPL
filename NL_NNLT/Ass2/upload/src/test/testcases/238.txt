@@ -1,0 +1,5 @@
+ 
+        Procedure main();
+        begin
+            a:= a and b and not c and d;
+        end

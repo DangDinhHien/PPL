@@ -1,1 +1,1 @@
-void main() {putInt(100);}
+Program(List(ClassDecl(Id(a),List(MethodDecl(Id(main),Static,List(),VoidType,Block(List(),List(CallStmt(Id(io),Id(writeInt),[IntLiteral(5)]))))))))

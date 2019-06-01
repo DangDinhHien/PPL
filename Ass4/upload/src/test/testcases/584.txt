@@ -1,0 +1,11 @@
+
+            class a{
+                static d: float;
+                bb: float;
+                void static main(){
+                    d, f: int;
+                    for d := 2 + 3 downto 1 do
+                        io.writeIntLn(d);
+                }
+            }
+        

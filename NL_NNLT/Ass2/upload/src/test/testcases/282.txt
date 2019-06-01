@@ -1,0 +1,9 @@
+
+        procedure main(n:integer);
+        begin
+            if(a>b)then a:=b;
+            else
+            begin
+                a:=-b;
+            end
+        end

@@ -1,0 +1,11 @@
+ 
+        Procedure main();
+        begin
+            n:=1;
+            S:=0;
+            while n<10 do
+            begin
+                S:=S+n;
+                n:=n+1;
+            end
+        end

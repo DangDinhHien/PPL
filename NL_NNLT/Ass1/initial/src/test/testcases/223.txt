@@ -1,0 +1,14 @@
+ 
+        Procedure main();
+        begin
+            if a>b then
+                if a>5 then
+                    a:=b;
+                else
+                    if a>3 then
+                        a:=3;
+                    else
+                        a:=3;
+            else
+                b:=a;
+        end

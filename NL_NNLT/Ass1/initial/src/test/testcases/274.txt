@@ -1,0 +1,11 @@
+
+        function sum_2_int(a,b:integer):integer;
+        begin
+            return a+b;
+        end
+        Procedure main();
+        begin
+            if(a-b = c-d) then
+            begin
+            end
+        end

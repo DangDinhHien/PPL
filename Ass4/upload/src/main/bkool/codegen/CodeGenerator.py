@@ -189,7 +189,6 @@ class CodeGenVisitor(BaseVisitor, Utils):
     def visitClassDecl(self, ast, c):
         #ast:ClassDecl
         #c:Any
-        print(ast)
         emit = Emitter(self.path + "/" + ast.classname.name + ".j")
         parentname = ast.parentname.name if ast.parentname else "java.lang.Object"
         emit.printout(emit.emitPROLOG(ast.classname.name, parentname))
@@ -212,9 +211,7 @@ class CodeGenVisitor(BaseVisitor, Utils):
         lstMethod = list(filter(lambda x: type(x) is MethodDecl, ast.memlist))
         list(map(lambda x: self.visit(x, e), lstMethod))
         # generate default constructor
-        self.genMETHOD(MethodDecl(Instance(),Id("<init>"), list(), None, Block(list(), list())), 
-            e, 
-            Frame("<init>", VoidType()))
+        self.genMETHOD(MethodDecl(Instance(),Id("<init>"), list(), None, Block(list(), list())), e, Frame("<init>", VoidType()))
         emit.emitEPILOG()
         return c
 
@@ -222,15 +219,17 @@ class CodeGenVisitor(BaseVisitor, Utils):
         #o: MethodEnv, frame
         idx = o[1].getNewIndex()
         emit = o[0].emit
-        emit.printout(emit.emitVAR(idx, ast.variable.name, ast.varType, o[1].getStartLabel(), o[1].getEndLabel(), o[1]))
+        emit.printout(emit.emitVAR(idx, ast.variable.name, ast.varType, o[2], o[3], o[1]))
         o[0].declist = [Member(ast.variable.name, Instance(), ast.varType, Index(idx))] + o[0].declist
 
     def visitConstDecl(self, ast, o):
         #o: MethodEnv, frame
         idx = o[1].getNewIndex()
         emit = o[0].emit
-        emit.printout(emit.emitVAR(idx, ast.constant.name, ast.constType, o[1].getStartLabel(), o[1].getEndLabel(), o[1]))
+        emit.printout(emit.emitVAR(idx, ast.constant.name, ast.constType, o[2], o[3], o[1]))
+        
         o[0].declist = [Member(ast.constant.name, Instance(), ast.constType, Index(idx), ast.value)] + o[0].declist
+        self.visit(Assign(ast.constant, ast.value), StmtEnv(o[1], o[0].declist, o[0]))
 
 
     def genMETHOD(self, consdecl, o, frame):
@@ -257,12 +256,12 @@ class CodeGenVisitor(BaseVisitor, Utils):
         #TODO generate code for parameter
         if isMain is False:
             for x in consdecl.param:
-                self.visit(x, (o, frame))
+                self.visit(x, (o, frame, frame.getStartLabel(), frame.getEndLabel()))
 
         #TODO generate code for local declarations
         body = consdecl.body
         for x in body.decl:
-            self.visit(x.decl, (o, frame))
+            self.visit(x.decl, (o, frame, frame.getStartLabel(), frame.getEndLabel()))
 
         emit.printout(emit.emitLABEL(frame.getStartLabel(), frame))
 
@@ -285,21 +284,102 @@ class CodeGenVisitor(BaseVisitor, Utils):
         self.genMETHOD(ast, o, frame)
         return o
 
+    def visitBlock(self, ast, o):
+        #o: stmt
+        frame = o.frame
+        emit = o.method.emit
+        if ast.decl != []:
+            beginLabel = frame.getNewLabel()
+            getEndLabel = frame.getNewLabel()
+            list(map(lambda x: self.visit(x.decl, (o.method, frame, beginLabel, getEndLabel)), ast.decl))
+            emit.printout(emit.emitLABEL(beginLabel, frame))
+            list(map(lambda x: self.visit(x, o), ast.stmt))
+            emit.printout(emit.emitLABEL(getEndLabel, frame))
+
+            for i in ast.decl:
+                name = i.decl.variable.name if type(i.decl) is VarDecl else i.decl.constant.name
+                mem = self.lookup(name, o.method.declist, lambda x: x.name)
+                o.method.declist.remove(mem)
+        else:
+            list(map(lambda x: self.visit(x, o), ast.stmt))
+        
+    def visitFieldAccess(self, ast, o):
+        #o: expr
+        emit = o.stmt.method.emit
+        frame = o.stmt.frame
+
+        cname = ""
+        fieldname = ast.fieldname.name
+
+        if type(ast.obj) is SelfLiteral:
+            cname = o.stmt.method.classname
+        else:
+            cname = ast.obj.name
+
+        symclass = self.lookup(cname, self.env, lambda x: x.cname)
+        fieldsym = self.lookup(fieldname, symclass.mem, lambda x: x.name)
+        fieldtype = fieldsym.mtype
+
+        code = emit.emitGETSTATIC(cname + "." + fieldname, fieldtype, frame)
+        return code, fieldtype
+
+
+        
+
+    ### return cname, methodsym
+    def Call(self, cname, methodName):
+        pname = ""
+        sym = self.lookup(cname,self.env,lambda x: x.cname)
+        ctype = ClassType(Id(sym.cname))
+        pname = sym.pname
+        symclass = self.lookup(ctype.classname.name,self.env,lambda x:x.cname)
+        methodsym = self.lookup(methodName,symclass.mem,lambda x:x.name)
+        if methodsym is None:
+            return self.Call(pname, methodName)
+        else:
+            return cname, methodsym
+
+    def visitCallExpr(self, ast, o):
+        emit = o.stmt.method.emit
+        frame = o.stmt.frame
+
+        cname = ""
+        methodName = ast.method.name
+        # pname = ""
+
+        if type(ast.obj) is SelfLiteral:
+            cname = o.stmt.method.classname
+        else:
+            cname = ast.obj.name
+
+        cname, methodsym = self.Call(cname, methodName)
+        mtype = methodsym.mtype
+
+        in_ = ("", list())
+        for x in ast.param:
+            str1, typ1 = self.visit(x, o)
+            if type(typ1) is IntType and type(x) is FloatType:
+                in_ = (in_[0] + str1 + emit.emitI2F(frame), in_[1].append(typ1))    
+            else:
+                in_ = (in_[0] + str1, in_[1].append(typ1))
+        return (in_[0] + emit.emitINVOKESTATIC(cname + "/" + ast.method.name, mtype, frame), mtype.rettype)
+
     def visitCallStmt(self, ast, o):
         #ast: CallStmt
         #o: StmtEnv
         emit = o.method.emit
         frame = o.frame
 
-        sym = self.lookup(ast.obj.name,self.env,lambda x: x.cname)
-        if sym:
-            cname = sym.cname
-            ctype = ClassType(Id(sym.cname))
+        cname = ""
+        methodName = ast.method.name
+        # pname = ""
+
+        if type(ast.obj) is SelfLiteral:
+            cname = o.method.classname
         else:
-            raise Undeclared(Identifier(),ast.name)
-        #cname,ctype = self.visit(ast.obj, ExprEnv(False,True,o))
-        symclass = self.lookup(ctype.classname.name,self.env,lambda x:x.cname)
-        methodsym = self.lookup(ast.method.name,symclass.mem,lambda x:x.name)
+            cname = ast.obj.name
+
+        cname, methodsym = self.Call(cname, methodName)
         mtype = methodsym.mtype
 
         in_ = ("", list())
@@ -318,10 +398,20 @@ class CodeGenVisitor(BaseVisitor, Utils):
         emit = o.method.emit
         beginLabel = frame.getNewLabel()
         frame.enterLoop()
-        ### expr1
+        ## expr1
         self.visit(Assign(ast.id, ast.expr1), o)
         emit.printout(emit.emitLABEL(beginLabel, frame))
+        # ### expr2
+        op = ('<=', '+') if ast.up == "True" else ('>=', '-')
+        emit.printout(self.visit(BinaryOp(op[0], ast.id, ast.expr2), ExprEnv(True, False, o))[0])
+        emit.printout(emit.emitIFFALSE(frame.getBreakLabel(), frame))
+        # ### loop
+        self.visit(ast.loop, o)
+        emit.printout(emit.emitLABEL(frame.getContinueLabel(), frame))                
+        self.visit(Assign(ast.id, BinaryOp(op[1], ast.id, IntLiteral(1))), o)
 
+        emit.printout(emit.emitGOTO(str(beginLabel), frame))
+        emit.printout(emit.emitLABEL(frame.getBreakLabel(), frame))
         frame.exitLoop()
 
     def visitIf(self, ast, o):
@@ -412,7 +502,6 @@ class CodeGenVisitor(BaseVisitor, Utils):
         #o: stmt
         emit = o.method.emit
         frame = o.frame
-        print(o.frame.returnType)
 
         res1, type1 = self.visit(ast.expr, ExprEnv(False, False, o))
         returnType = frame.returnType

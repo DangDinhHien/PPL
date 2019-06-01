@@ -1,0 +1,11 @@
+
+        function m():real;
+        begin
+            return 1.0;
+        end
+        procedure main();
+        var c:string;
+        begin
+            putFloat(-m());
+        end
+        

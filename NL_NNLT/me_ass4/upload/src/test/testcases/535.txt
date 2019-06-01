@@ -1,0 +1,17 @@
+
+        function giaithua(n:integer):integer;
+        var GT,i:integer;
+        begin
+            GT:=1;
+            for i:=1 to n do
+                GT:=GT*i;
+            return GT;
+        end
+        procedure main ();
+        var x,y:real;
+            n:integer;
+        begin
+            n:=5;
+            putIntLn(giaithua(n));
+        end
+        

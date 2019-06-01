@@ -640,7 +640,11 @@ class Emitter():
         elif type(in_) is VoidType:
             return self.jvm.emitRETURN()
         elif type(in_) is FloatType:
+            frame.pop()
             return self.jvm.emitFRETURN()
+        elif type(in_) is BoolType:
+            frame.pop()
+            return self.jvm.emitIRETURN()
         elif type(in_) is StringType or type(in_) is ArrayType or type(in_) is cgen.ArrayPointerType:
             frame.pop()
             return self.jvm.emitARETURN()
@@ -667,7 +671,7 @@ class Emitter():
         #label: Int
         #frame: Frame
 
-        return self.jvm.emitGOTO(label)
+        return self.jvm.emitGOTO(str(label))
 
     ''' generate some starting directives for a class.<p>
     *   .source MPC.CLASSNAME.java<p>

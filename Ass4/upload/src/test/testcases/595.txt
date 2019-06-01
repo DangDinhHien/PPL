@@ -1,0 +1,19 @@
+
+            class a {
+                void static main(){
+                    dem :int;
+                    dem := b.foo2();
+                    io.writeFloat(b.foo3());
+                }
+            }
+
+            class b {
+                float static foo3(){
+                    return -7.5 * 2;
+                }
+                int static foo2(){
+                    return 1;
+                }
+            }
+
+        

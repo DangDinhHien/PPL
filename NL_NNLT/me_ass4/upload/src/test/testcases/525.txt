@@ -1,0 +1,18 @@
+
+        procedure main();
+        var x: array[0 .. 2] of integer;
+        begin
+            x[0] := 100;
+            x[1] := 200;
+            swap(x);
+            putInt(x[0]);
+            putInt(x[1]);
+        end
+
+        procedure swap(a: array[0 .. 2] of integer);
+        var temp: integer;
+        begin
+                temp := a[1];
+                a[1] := a[0];
+                a[0] := temp;
+            end        

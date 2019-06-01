@@ -1,0 +1,19 @@
+
+        function max_element_array(arr:array[1 .. 10] of integer):integer;
+        var index_:integer;
+        begin
+            index:=1;
+            for i:=2 to 10 do
+            begin
+                if(arr[i]>arr[index]) then
+                begin
+                    index := i;
+                end
+            end
+            return index;
+        end
+        Procedure main();
+        var k: array[1 .. 10] of integer;
+        begin
+            putIntLn(max_element_array(k));
+        end

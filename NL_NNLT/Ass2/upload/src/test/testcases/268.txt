@@ -1,0 +1,19 @@
+
+        function sum_even_element_array(arr:array[1 .. 10] of integer):integer;
+        var tong_:integer;
+        begin
+            tong_:=0;
+            for i:=1 to 10 do
+            begin
+                if(arr[i] mod 2 = 2) then
+                begin
+                    tong_:=tong_+arr[i];
+                end
+            end
+            return tong_;
+        end
+        Procedure main();
+        var k: array[1 .. 10] of integer;
+        begin
+            putIntLn(sum_even_element_array(k));
+        end

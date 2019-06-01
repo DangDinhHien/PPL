@@ -1,0 +1,5 @@
+ 
+        Procedure main();
+        begin
+            a:=b:=c:= 5;
+        end

@@ -1,0 +1,8 @@
+
+	   procedure main();
+	   var x: array[0 .. 4] of integer;
+	   i, j, temp: integer;
+	   begin
+			putFloatLn(2);
+	   end
+        

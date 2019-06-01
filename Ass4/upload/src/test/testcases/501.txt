@@ -1,1 +1,1 @@
-Program(List(ClassDecl(Id(a),List(MethodDecl(Id(main),Static,List(),VoidType,Block(List(),List(CallStmt(Id(io),Id(writeInt),[IntLiteral(5)]))))))))
+Program(List(ClassDecl(Id(a),List(MethodDecl(Id(main),Static,List(),VoidType,Block(List(),List(CallStmt(Id(io),Id(writeFloat),[FloatLiteral(5.0)]))))))))

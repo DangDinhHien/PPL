@@ -1,0 +1,5 @@
+
+        Procedure main();
+        begin
+            putIntLn("Hello Word!!!");
+        end

@@ -1,0 +1,6 @@
+ 
+        Procedure main();
+        begin
+            n:= not a;
+            m:= a+-c;
+        end

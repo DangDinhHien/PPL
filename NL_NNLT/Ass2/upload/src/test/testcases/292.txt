@@ -1,0 +1,14 @@
+
+        procedure main();
+        Var    St:String;
+               dem: Array[1 .. 10] Of string;
+               i:string;
+               ch:string;
+        Begin
+            Write("Nhap xau St: "); Readln(St);
+            For ch:="A" To "Z" Do dem[ch]:=0;
+           
+            For ch:="A" To "Z" Do 
+                If dem[ch]>0 Then Writeln(ch," : ",dem[ch]);
+        End
+        

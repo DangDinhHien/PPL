@@ -1,0 +1,12 @@
+         
+        procedure main();
+        var b: array[0 .. 100] of real;
+        x: real;
+        e: string;
+        begin
+            x := -100;
+            b[0] := 100 + x*2;
+            b[1] := 2*b[0] - 900;
+            putFloatLn(b[1]);
+            putFloatLn(x);
+        end

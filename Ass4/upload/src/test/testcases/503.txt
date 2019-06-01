@@ -1,1 +1,7 @@
-Program(List(ClassDecl(Id(a),List(MethodDecl(Id(main),Static,List(),VoidType,Block(List(),List(CallStmt(Id(io),Id(writeStr),[StringLiteral("acc")]))))))))
+
+            class a{
+                void static main(){
+                    io.writeStr("cc");
+                }
+            }
+        

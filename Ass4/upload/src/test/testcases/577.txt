@@ -1,0 +1,15 @@
+
+            class a{
+                static d: float;
+                bb: float;
+                void static main(){
+                    d, f: int;
+                    e: boolean;
+                    e := 1 < 3;
+                    for d := 1 to 3 do
+                        io.writeBool(e);
+                 
+                    
+                }
+            }
+        

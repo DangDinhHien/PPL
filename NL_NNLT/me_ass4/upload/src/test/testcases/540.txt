@@ -1,0 +1,38 @@
+
+    procedure main();
+        var i, j, n, max, temp : integer; a: array[0 .. 10] of integer;
+        begin
+            a[0] := 9;
+            a[1] := 3;
+            a[2] := 12;
+            a[3] := 7;
+            a[4] := 43;
+            a[5] := 32;
+            a[6] := 17;
+            a[7] := 4;
+            a[8] := -2;
+            a[9] := 12;
+            a[10] := 9;
+
+            n := 10;
+
+        for i := 0 to n do
+        begin
+            max := i;
+            for j := i + 1 to n do
+                if a[max] < a[j] then
+                    max := j;
+            
+            temp := a[i];
+            a[i] := a[max];
+            a[max] := temp;
+        end
+            
+        for i := 0 to n do
+        begin
+            putInt(a[i]);
+            putString("\t");
+        end
+
+    end        
+        

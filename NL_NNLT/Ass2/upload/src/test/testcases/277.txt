@@ -1,0 +1,15 @@
+
+        procedure main();
+        var a,b,c,cubic_sum,num:integer;
+        begin
+            for a:=1 to 9 do
+                for b:=0 to 9 do
+                begin
+                    for c:=0 to 9 do
+                    begin
+                    cubic_sum:=(a*a*a)+(b*b*b)+(c*c*c);
+                    num:=(100*a)+(10*b)+c;
+                        if (cubic_sum=num) then writeln(num);
+                    end
+                end
+        end

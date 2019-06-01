@@ -1,0 +1,16 @@
+
+            class a {
+                void static main(){
+                    final string dem = "str";
+                    io.writeStrLn(dem);
+                    io.writeFloat(b.foo2());
+                }
+            }
+
+            class b {
+                float static foo2(){
+                    return 7.7;
+                }
+            }
+
+        

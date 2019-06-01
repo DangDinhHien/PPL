@@ -1,0 +1,18 @@
+
+            class a {
+                static d: float;
+                bb: float;
+                void static main(){
+                    a: int;
+                    e: boolean;
+                    e := false;
+                    b.foo();
+                }
+            }
+
+            class b {
+                void static foo(){
+                    io.writeInt(11);
+                }
+            }
+        

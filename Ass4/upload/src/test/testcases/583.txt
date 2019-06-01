@@ -1,0 +1,17 @@
+
+            class a {
+                void static main(){
+                    t: int;
+                    t := 10 * 10;
+                    io.writeInt(t);
+                }
+            }
+
+            class b {
+                static a, b: int;
+                string static foo2(){
+                    return "str";
+                }
+            }
+
+        

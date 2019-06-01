@@ -1,0 +1,14 @@
+
+        var x:integer;
+        var y:real;
+        Procedure main();
+        var a,b:integer;
+        begin
+            if(y<5)and(y<10)then
+            begin
+                x:=a;
+                y:=b;
+                putIntLn( x );
+                putIntLn( y );
+            end
+        end

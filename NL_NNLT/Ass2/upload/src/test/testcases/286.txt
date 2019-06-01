@@ -1,0 +1,20 @@
+
+        procedure main();
+        var ArrInt : array[1 .. 250] of integer;   
+                    n,i,x : integer;
+                    a: integer; 
+        BEGIN
+        write("Nhap so phan tu: ");
+        for i:=1 to n do
+            begin
+                write("Phan tu thu ",i,"= ");
+                readln(a[i]);
+            end
+            writeln("Cac so chinh phuong co trong mang:");
+            for i:=1 to n do
+            begin
+            x:=trunc(sqrt(a[i]));
+                if sqr(x)=a[i] then
+                write(a[i]);
+            end
+        END

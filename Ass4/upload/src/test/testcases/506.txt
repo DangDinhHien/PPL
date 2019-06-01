@@ -3,17 +3,10 @@
                 static d: float;
                 bb: float;
                 void static main(){
-                    d, f: int;
-                    e: boolean;
-                    %%d := 4;
-                    if true then 
-                        d := 5;
-
-                    f := d;
-
-                    %%io.writeInt(d);
-                    
-                    
+                    d: float;
+                    d := 5 + 3.0;
+                    d := d + 1;
+                    io.writeFloat(d);
                 }
             }
         

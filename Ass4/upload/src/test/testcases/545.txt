@@ -1,0 +1,14 @@
+
+            class a{
+                static d: float;
+                bb: float;
+                void static main(){
+                    d, f: int;
+                    e: boolean;
+                    e := true;
+                    for d := 2 + 2 downto 1 do
+                        break;
+                    io.writeIntLn(d);
+                }
+            }
+        

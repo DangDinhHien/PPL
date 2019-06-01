@@ -1,0 +1,13 @@
+
+            class a{
+                static d: float;
+                bb: float;
+                void static main(){
+                    d: float;
+                    e: boolean;
+                    d := 44.5;
+                    e := (d > 1);
+                    io.writeBool(e);
+                }
+            }
+        

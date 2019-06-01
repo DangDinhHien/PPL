@@ -1,0 +1,5 @@
+ 
+        Procedure main();
+        begin
+            n:= a or b;
+        end

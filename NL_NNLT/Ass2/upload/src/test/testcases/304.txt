@@ -1,0 +1,5 @@
+
+        function foo (c,d : integer):INTEGER;
+        var d : real;
+        begin
+        end

@@ -1,0 +1,18 @@
+
+            class a{
+                static d: float;
+                bb: float;
+                void static main(){
+                    a: int;
+                    e: boolean;
+                    e := false;
+                    for a := 3 downto 1 do {
+                        if a == 3 then {
+                            break;
+                        }
+                    }
+
+                    io.writeInt(a);
+                }
+            }
+        

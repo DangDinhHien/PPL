@@ -1,0 +1,5 @@
+ 
+        Procedure main();
+        begin
+            n:= a(1,2)[b(123+5)[c(174.145)]];
+        end

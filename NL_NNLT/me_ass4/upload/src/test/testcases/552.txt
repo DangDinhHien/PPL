@@ -1,0 +1,12 @@
+
+            procedure main();
+            var a: array [10 .. 19] of integer;
+                b: integer;
+            begin
+                a[12] := 6;
+                putInt(a[12]+12);
+                f[3] := 3.5;
+                putFloat(f[3]+4.5);
+            end
+            var f: array [1 .. 20] of real;
+        

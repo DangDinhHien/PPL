@@ -1,0 +1,6 @@
+
+        procedure main();
+        var x : string;
+        begin 
+        end
+        

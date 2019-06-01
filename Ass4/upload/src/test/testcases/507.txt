@@ -1,0 +1,11 @@
+
+            class a{
+                static d: float;
+                bb: float;
+                void static main(){
+                    d: float;
+                    d := 6 / 3;
+                    io.writeFloat(d);
+                }
+            }
+        

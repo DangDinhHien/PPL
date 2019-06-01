@@ -1,7 +1,9 @@
 
-            class a{
+            class a {
+                a, b:int;
+
                 void static main(){
-                    io.writeStr("cc");
+                    io.writeBool(false);
                 }
             }
         

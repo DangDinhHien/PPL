@@ -1,0 +1,29 @@
+
+
+        procedure main();
+        var i, max : integer; a: array[0 .. 10] of integer;
+        begin
+            a[0] := 9;
+            a[1] := 3;
+            a[2] := 12;
+            a[3] := 7;
+            a[4] := 43;
+            a[5] := 32;
+            a[6] := 17;
+            a[7] := 4;
+            a[8] := -2;
+            a[9] := 12;
+            a[10] := 9;
+
+            max := a[0];
+
+            for i := 1 to 10 do 
+            begin
+                if a[i] > max then
+                    max := a[i];
+            end
+
+            putInt(max);
+        end
+
+        

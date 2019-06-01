@@ -1,0 +1,5 @@
+
+        function main ():real;
+        begin
+            a:=c;
+        end

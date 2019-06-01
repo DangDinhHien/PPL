@@ -14,9 +14,11 @@
 .var 5 is f F from Label0 to Label1
 .var 6 is aa I from Label0 to Label1
 Label0:
+	iconst_0
+	invokestatic abc/writeBool(Z)V
 Label1:
 	return
-.limit stack 0
+.limit stack 2
 .limit locals 7
 .end method
 

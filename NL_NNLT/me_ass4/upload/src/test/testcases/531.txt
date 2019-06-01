@@ -1,0 +1,40 @@
+
+	   procedure main();
+	   var x: array[0 .. 4] of integer;
+	   i, j, temp: integer;
+	   begin
+
+			x[0] := 5;
+			x[1] := 2;
+			x[2] := 8;
+			x[3] := 9;
+			x[4] := 1;
+			bbsort(x);
+			putLn();
+		for i := 0 to 4 do
+		begin
+			putInt(x[i]);
+			putString("\t");
+		end
+	   end
+
+	   procedure bbsort(x: array[0 .. 4] of integer);
+	   var n, temp, i, j: integer;
+	   begin
+		n := 5;
+		for i := 0 to n - 1 do
+		for i := 0 to n - 2 do
+			for j := 0 to n - i - 2 do
+				if x[j] > x[j+1] then
+					begin
+					temp := x[j];
+					x[j] := x[j + 1];
+					x[j+1] := temp;
+					end
+
+		for i := 0 to n - 1 do
+		begin
+			putInt(x[i]);
+			putString("\t");
+		end
+	   end        

@@ -1,0 +1,6 @@
+ 
+        Procedure main();
+        begin
+            n:= true;
+            m:= false;
+        end

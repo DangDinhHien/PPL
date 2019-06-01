@@ -1,0 +1,21 @@
+
+
+        var z: integer;
+        var b: array[0 .. 2] of real;
+
+        procedure main();
+        var e: integer;
+        x: real;
+        z: string;
+        begin
+            e := 12;
+            x := 12*100;
+            b[1] := e + x - 200;
+            putFloatLn(b[1]);
+            foo();
+        end
+
+        procedure foo();
+        begin
+            putFloat(b[1]);
+        end        

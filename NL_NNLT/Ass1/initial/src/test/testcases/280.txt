@@ -1,0 +1,16 @@
+
+        function power(x:real;y:integer):real;
+        var p:real;
+            i:integer;
+        begin
+            p:=1;
+            for i:=1 to y do p:=p*x;
+            power:=p;
+        end
+        procedure main();
+        var x:real;
+            y:integer;
+        begin
+            putIntLn("aaa : ",power(x,y));
+        end
+        

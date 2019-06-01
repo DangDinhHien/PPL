@@ -1,0 +1,15 @@
+
+        procedure main();
+        var tcha,tcon,nam,kq:string;
+        begin
+            write("nhap tuoi con");
+            readln(tcon);
+            write();readln(tcha);
+            while tcha<>2*tcon do
+            begin
+                nam:=nam+1;
+                tcon:=tcon+1;
+                tcha:=tcha+1;
+            end
+        end
+        

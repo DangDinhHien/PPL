@@ -1,0 +1,16 @@
+
+        var x: integer;
+        var z: array[0 .. 3] of integer;
+        procedure main();
+        begin
+        x := 10;
+        foo();
+        putIntLn(z[2]);
+        putIntLn(x);
+        end
+
+        procedure foo();
+        begin
+            z[2] := 100;
+        end
+        

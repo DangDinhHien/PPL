@@ -1,0 +1,13 @@
+
+        var x,y:integer;
+        Procedure main();
+        var a,b:integer;
+        begin
+            putIntLn(--increase(--x));
+            putIntLn(--increase(--y));
+        end
+        function increase(x:integer):integer;
+        begin
+            return x+1;
+        end
+        

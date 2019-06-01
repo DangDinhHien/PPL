@@ -1,0 +1,9 @@
+
+        var x:boolean;
+        procedure main();
+        var a,b:integer;
+        begin
+            x:= (5<7) and then true ;
+            putbool(x);
+        end
+        

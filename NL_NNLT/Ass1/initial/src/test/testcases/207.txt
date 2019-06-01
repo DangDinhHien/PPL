@@ -1,0 +1,7 @@
+
+        var x:integer;
+            y,x,z:reAl;
+            tem_:array[1 .. 5] of integer;
+        Procedure main();
+        begin
+        end

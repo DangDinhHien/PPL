@@ -1,0 +1,6 @@
+ 
+        Procedure main();
+        begin
+            if a>b then
+             a:=5;
+        end

@@ -1,0 +1,10 @@
+
+        //var a:array[1-2..5] ;
+        Procedure main();
+        begin
+            k:=5+--5--------5;
+            n:=--5;
+            m:=not not a;
+            if 5<-15 then
+            a:=5;
+        end

@@ -1,0 +1,17 @@
+
+
+    procedure main();
+    
+    var a: array [0 .. 10] of real;
+    
+    begin
+        a[0] := 10;
+
+        a[1] := a[0]*10 - 2*a[0] + 100;
+
+        a[2] := a[0] - 2*a[1]/a[0];
+
+        putFloatLn(a[2]);
+        putFloatLn(a[1]);
+    end
+        

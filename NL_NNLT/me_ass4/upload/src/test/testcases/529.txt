@@ -1,0 +1,15 @@
+
+       procedure main();
+       var x: array[1 .. 1] of integer;
+       begin
+        x[1] := 12;
+        foo(x);
+        putIntLn(x[1]);
+        end
+
+        procedure foo(x: array[1 .. 1] of integer);
+        begin
+            putIntLn(x[1]);
+            x[1] := 1000;
+            putIntLn(x[1]);
+        end        

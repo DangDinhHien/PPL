@@ -1,0 +1,15 @@
+
+            class a {
+                void static main(){
+                    final boolean dem = true;
+                    io.writeBool(dem);
+                }
+            }
+
+            class b {
+                string static foo2(){
+                    return "str";
+                }
+            }
+
+        
